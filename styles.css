@@ -1,0 +1,395 @@
+/* Variables */
+
+:root {
+    --black: #212121;
+    --grey: #484848;
+    --orange: #E08D21;
+}
+
+/* CSS Reset */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+.app { 
+    padding-top: 14px;
+    max-width: 1920px;
+    width: 80%;
+    margin : 0 auto;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* Header styles */
+
+header {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #747474;
+    /* Make the line below navbar full width */
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+}
+
+.logo__anchor {
+    color:inherit;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+/* Navbar styles */
+
+.navbar {
+    display: flex;
+    gap:40px;
+    font-weight: 500;
+    font-size: 18px;
+    justify-content: end;
+    width: 70vw;
+    list-style: none; 
+}
+
+.menu__icon {
+    display:none;
+}
+
+.menu__img {
+    height: 15px;
+}
+
+.link {
+    color:var(--black);
+}
+
+.link--orange {
+    color: #B25600;
+}
+
+
+.anchor {
+    text-decoration: none;
+    color:inherit;
+}
+
+/* Main Style */
+
+.jd {
+    gap: 20px;
+    justify-content: center;
+    padding-top: 90px;
+    border-radius: 30px;
+    color: var(--grey);
+}
+
+.back__wrapper {
+    padding-bottom: 20px;
+    padding-left: auto;
+}
+
+.backBtn {
+    color:inherit;
+    text-decoration: none;
+    display: flex;
+    gap: 7px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.backTxt {
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'Roboto';
+}
+
+
+/* Main Styles */
+
+.main {
+    box-shadow: 0px 1px 18px 0px #93939357;
+    padding: 36px 46px;
+    border-radius: 30px;
+}
+
+.jd__container {
+    gap: 54px;
+    display: flex;
+    flex-direction: column;
+}
+
+.jd__header {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.jd__main {
+    border: 1px solid #00000033;
+    border-radius: 16px;
+    padding: 24px 28px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: 'Inter';
+    color: var(--orange);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 47px;
+}
+
+.title__details {
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+
+}
+
+.employer {
+    font-family: 'Inter';
+
+    color: #0B0B0B8C;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.departament {
+    font-family: 'Inter';
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color:  #0B0B0B;
+}
+
+.subtitles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color:#484848;
+}
+
+.applyBtn {
+     background-color: var(--orange);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+/* Job Body */
+
+.jd__body {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    padding-right: 326px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.description > div {
+    gap: 12px;
+}
+
+.description > p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.description__header {
+    font-size: 26px;
+    line-height: 39px;
+    color:#0B0B0B;
+}
+
+.under {
+    text-decoration:underline;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    color:#0B0B0B;
+}
+
+.list {
+    font-size: 18px;
+    font-weight: 400;
+    list-style-position: outside;
+    padding-left: 1.2rem;
+}
+
+.list > li {
+    padding: 2px;
+}
+
+hr {
+    border: 1px solid #00000033;
+    width: 70vw;
+}
+
+.jd__body > div:last-child {
+    gap: 34px;
+}
+
+.general__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about {    
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    align-items: start;
+}
+
+.contact__name, 
+.contact__person {
+    font-weight: 700;
+    font-style: 18px;
+    line-height: 27px;
+}
+
+.contact__role {
+    font-weight: 400;
+    font-size: 18px;
+    color: #484848;
+}
+
+.jd__apply {
+    align-self: center;
+}
+
+@media screen and (max-width: 992px) {
+    nav {
+        justify-content: start;
+        align-items: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .jd {
+        padding-top:30px;
+    }
+
+    .logo__anchor {
+        align-self: flex-start;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: -120%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        background: gray;
+        z-index: 1;
+        padding: 2em;
+        justify-content: start;
+        
+    }
+
+    .navbar.active {
+        left: 0;
+        opacity: 1;
+    }
+
+    .menu__icon {
+        display: block;
+        position:absolute;
+        top:0;
+        right: 0;
+        cursor: pointer;
+        padding: 1em;
+    }
+
+    .menu__img {
+        height: 40px;
+    }
+
+    .link {
+        text-align: center;
+        width: 100%;
+        display: table;
+        color:white;
+        padding-bottom: 3rem;
+    }
+    
+    .subtitles {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap:26px;
+    }
+    .applyBtn {
+        width: 100%;
+    }
+
+    .app { 
+        gap: 30px;
+    }
+
+    .jd__body {
+        padding:0;
+    }
+
+    .jd__apply {
+        width: 100%;
+    }
+}

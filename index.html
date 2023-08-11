@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- To add fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="referrer" content="origin" />
+  </head>
+
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header>
+        <div class="header__wrapper">
+          <a href="/" class="logo__anchor">
+            <p class="logo">Logo</p>
+          </a>
+          <div class="menu__icon">
+            <img class="menu__img" src="./assets/burger.svg" alt="" />
+          </div>
+          <!-- Navbar -->
+          <nav>
+            <ul class="navbar">
+              <!-- Added links in JS -->
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="jd">
+        <main class="main">
+          <div class="back__wrapper">
+            <a href="/" class="backBtn">
+              <img src="./assets/arrowLeft.svg" alt="" />
+              <p class="backTxt">Inapoi la locurile de munca</p>
+            </a>
+          </div>
+          <!-- Job -->
+          <div class="jd__container">
+            <div class="jd__header">
+              <div class="jd__main">
+                <div class="titles">
+                  <h1 class="title"></h1>
+                  <div class="title__details">
+                    <p class="employer">Angajator:</p>
+                    <p class="departament">Departament:</p>
+                  </div>
+                </div>
+                <div class="subtitles">
+                  <div class="info">
+                    <!-- Job Header added via JS -->
+                  </div>
+                  <button class="applyBtn">Aplica</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- TO FIX FROM HERE -->
+            <div class="jd__body">
+              <div class="description">
+                <h2 class="description__header">Descrierea meseriei</h2>
+                <p id="jd"></p>
+              </div>
+      
+              <div class="responsabilities">
+                <h2 class="description__header under">Responsabilitati</h2>
+                <ul class="list" id="responsabilities">
+                </ul>
+              </div>
+              <div class="demands">
+                <h2 class="description__header under">Cerinte</h2>
+                <ul class="list" id="demands">
+                </ul>
+              </div>
+              <div class="offerings">
+                <h2 class="description__header">Ce oferim</h2>
+                <ul class="list" id="offerings">
+                </ul>
+              </div>
+              <div class="general__info">
+                <h2 class="description__header under">
+                  Alte informatii (optional)
+                </h2>
+                <ul class="list" id="generalInfo">
+                </ul>
+              </div>
+              <hr></hr>
+              <div class="about">
+                <div class="contact">
+                  <p class="contact__name under">Persoana de contact</p>
+                  <!-- To replace recruiter img -->
+                  <img src="./assets/recruiter.png" alt="" />
+                  <div>
+                    <p class="contact__person"></p>
+                    <p class="contact__role"></p>
+                  </div>
+                </div>
+                <div class="general__info">
+                  <p class="contact__name under">Date de contact</p>
+                  <ul class="list" id="contact__list">
+
+                    <!-- TO CONTINURE HEEREE -->
+                    <li id="phone">Telefon: </li>
+                    <li id="fax"> Fax: </li>
+                    <li id="email"> Email: </li>
+                    <li id="address">Adresa: </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="jd__apply">
+              <button class="applyBtn">Aplica</button>
+            </div>
+          </div>
+        </main>
+      </div>
+      </div>
+
+
+
+
+
+
+  </body>
+  <script src="index.js" type="module"></script>
+</html>
